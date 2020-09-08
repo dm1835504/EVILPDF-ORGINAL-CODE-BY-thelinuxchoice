@@ -38,7 +38,7 @@ def create_pdf(url,pdf_name,payload_name):
 
  print ("\033[1;77m[\033[0m\033[1;33m+\033[0m\033[1;77m] Generating PDF file...\033[0m\n")
  time.sleep(2)
- if pdf_name == "":
+if pdf_name == "":
    pdf_name=open('adobe.pdf', 'rb')
  unmeta=PdfFileReader("%s" % (pdf_name), "rb")
  meta=PdfFileWriter()
@@ -167,7 +167,7 @@ def start():
    subdomain_resp=True
    default_subdomain="getadobe"+str(randint(100,400))
    subdomain=input('\033[1;33m[\033[0m\033[1;77m+\033[0m\033[1;33m] Subdomain: (Default:\033[0m\033[1;77m %s \033[0m\033[1;33m): \033[0m' % (default_subdomain))
-   if subdomain == "":
+ if subdomain == "":
       subdomain=default_subdomain
  
  else:
