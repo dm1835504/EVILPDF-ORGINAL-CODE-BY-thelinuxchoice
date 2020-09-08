@@ -7,4 +7,4 @@ Hack windows shell by pdf
 
 © This tools was created by: @thelinuxchoise
 
-© Modified by: ghosthub (b@b@y)
+© Modified by: T1T4N1UM
